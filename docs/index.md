@@ -21,3 +21,35 @@ A aplicação tem como objetivo principal auxiliar coordenadores e professores d
 * **Build e Dependências:** Apache Maven
 * **Banco de Dados:** PostgreSQL
     * **Gerenciamento de Migrações:** Flyway, para versionamento e automação do schema do banco de dados
+
+
+# Guia de instalação
+Como configurar o ambiente e executar o projeto
+
+### Pré requisitos
+* Git
+* JDK (Java Development Kit) versão 21 ou superior
+* Apache Maven
+* PostgreSQL
+* IDE Java recomendada: IntelliJ IDEA
+
+### Passo a passo
+1. Clone o repositório do projeto:
+```bash
+git clone [https://github.com/CTISM-Prof-Henry/trab-final-spi-meninasmalvadas.git](https://github.com/CTISM-Prof-Henry/trab-final-spi-meninasmalvadas.git)
+
+2. Configurar o banco de dados
+* Garanta que o serviço do PostgreSQL está rodando
+* Crie uma base de dados vazia chamada ```evasao360```
+* Ajuste suas credenciais do PostgreSQL para ```usuario: postgres``` e ```senha: 1234``` OU ajuste o arquivo ```scr/main/resources/application.properties``` com as suas credenciais
+
+3. Executar a aplicação
+* Abra o projeto clonado na sua IDE
+* Execute a classe ```ProjetoSpringBootApplication.java```
+* O console da IDE vai mostrar o log de inicialização do Spring Boot, e o Flyway vai criar e popular as tabelas da base de dados
+
+4. Acessar
+* Abra o navegador em [http://localhost:8080](http://localhost:8080)
+* Use as credenciais padrão de acesso:
+    * Email: ```admin@admin.com```
+    * Senha: ```admin```
